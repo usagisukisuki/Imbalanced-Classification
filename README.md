@@ -42,7 +42,7 @@ python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --loss LADE
 ```
 python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --loss LDAM --norm
 ```
-### Learning logit adjusted loss
+### Learning with logit adjusted loss
 ```
 python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --loss LA
 ```
@@ -59,8 +59,32 @@ python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --loss IBFL
 ```
 python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --loss ELM --norm
 ```
-### Learning with false crossentreopy loss
+### Learning with false cross-entreopy loss
 ```
 python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --loss FCE
 python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --loss LAFCE
 ```
+
+## Learning with class balancing weight
+```
+python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --weight_rule CBReweight
+python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --weight_rule IBReweight
+```
+
+## Learning with class balancing weighting scheduler
+```
+python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --weight_rule CBReweight --weight_scheduler DRW
+```
+
+## Learning with hard augmentation
+### Mixup
+```
+python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --augmentation Mixup
+```
+### CutMix
+```
+python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --augmentation CutMix
+```
+
+
+
