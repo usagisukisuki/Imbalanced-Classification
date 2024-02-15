@@ -2,7 +2,7 @@
 
 ## Learning on long-tailed CIFAR10 or CIFAR100 [[paper]](https://arxiv.org/abs/1901.05555)
 <div align="center">
-  <img src="figs/cifar10.png" width="80%"><img src="figs/cifar100.png" width="80%">
+  <img src="figs/cifar10.png" width="80%">!<img src="figs/cifar100.png" width="80%">
 </div>
 ### Imbalanced ratio=10
 ```
