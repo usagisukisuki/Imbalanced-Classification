@@ -106,6 +106,7 @@ def test(epoch, criterion):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='IMLoss')
     parser.add_argument('--dataset', type=str, default='CIFAR10')
+    parser.add_argument('--datatype', type=str, default='exp', help='exp or step')
     parser.add_argument('--batchsize', type=int, default=128)
     parser.add_argument('--num_epochs', type=int, default=200)
     parser.add_argument('--out', type=str, default='result')

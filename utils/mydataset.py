@@ -23,11 +23,11 @@ def data_loader(args):
 
     if args.dataset=='CIFAR10':
         n_classes = 10
-        train_dataset = IMBALANCECIFAR10(root='./data', imb_type='exp', imb_factor=args.ratio, rand_number=args.seed, train=True, download=True, transform=transform_train)
+        train_dataset = IMBALANCECIFAR10(root='./data', imb_type=args.datatype, imb_factor=args.ratio, rand_number=args.seed, train=True, download=True, transform=transform_train)
         val_dataset = datasets.CIFAR10(root='./data', train=False, download=True, transform=transform_val)
     elif args.dataset=='CIFAR100':
         n_classes = 100
-        train_dataset = IMBALANCECIFAR100(root='./data', imb_type='exp', imb_factor=args.ratio, rand_number=args.seed, train=True, download=True, transform=transform_train)
+        train_dataset = IMBALANCECIFAR100(root='./data', imb_type=args.datatype, imb_factor=args.ratio, rand_number=args.seed, train=True, download=True, transform=transform_train)
         val_dataset = datasets.CIFAR100(root='./data', train=False, download=True, transform=transform_val)
 
 
