@@ -1,6 +1,6 @@
 # Imbalanced-Classification
 
-## Learning on long-tailed CIFAR10 or CIFAR100 [[paper]](https://arxiv.org/abs/1901.05555)
+## Learning on long-tailed CIFAR10 or CIFAR100 (CVPR2019) [[paper]](https://arxiv.org/abs/1901.05555)
 <div align="center">
     <img src="figs/fig.png"> 
 </div>
@@ -24,44 +24,44 @@ python3 train.py --dataset CIFAR10 (or CIFAR100) --gpu 0 --ratio 0.002
 ## Learning with effective loss function
 If you want to utilize various loss functions, you can directly run the following code to train the model.
 
-### Focal loss [[paper]](https://arxiv.org/abs/1708.02002)
+### Focal loss (ICCV2017) [[paper]](https://arxiv.org/abs/1708.02002)
 ```
 python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --loss Focal
 ```
-### Class balanced loss [[paper]](https://arxiv.org/abs/1901.05555)
+### Class balanced loss (CVPR2019) [[paper]](https://arxiv.org/abs/1901.05555)
 ```
 python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --loss CBW
 ```
-### Generalized reweight loss [[paper]](https://arxiv.org/abs/2103.16370)
+### Generalized reweight loss (CVPR2021) [[paper]](https://arxiv.org/abs/2103.16370)
 ```
 ppython3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --loss GR
 ```
-### Balanced softmax loss [[paper]](https://arxiv.org/abs/2007.10740)
+### Balanced softmax loss (NeurIPS2020) [[paper]](https://arxiv.org/abs/2007.10740)
 ```
 python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --loss BS
 ```
-### LADE loss [[paper]](https://arxiv.org/abs/2012.00321)
+### LADE loss (CVPR2021) [[paper]] (https://arxiv.org/abs/2012.00321)
 ```
 python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --loss LADE
 ```
-### LDAM loss [[paper]](https://arxiv.org/abs/1906.07413)
+### LDAM loss (NeurIPS2019) [[paper]] (https://arxiv.org/abs/1906.07413)
 ```
 python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --loss LDAM --norm
 ```
-### Logit adjusted loss [[paper]](https://arxiv.org/abs/2007.07314)
+### Logit adjusted loss (ICLR2021) [[paper]](https://arxiv.org/abs/2007.07314)
 ```
 python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --loss LA
 ```
-### Vector scaling loss [[paper]](https://arxiv.org/abs/2103.01550)
+### Vector scaling loss (NeurIPS2021) [[paper]](https://arxiv.org/abs/2103.01550)
 ```
 ppython3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --loss VS
 ```
-### Influence-Balanced loss [[paper]](https://arxiv.org/abs/2110.02444)
+### Influence-Balanced loss (ICCV2021) [[paper]](https://arxiv.org/abs/2110.02444)
 ```
 python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --loss IB
 python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --loss IBFL
 ```
-### ELM loss [[paper]](https://arxiv.org/abs/2306.09132)
+### ELM loss (SMC2023) [[paper]](https://arxiv.org/abs/2306.09132)
 ```
 python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --loss ELM --norm
 ```
