@@ -47,6 +47,7 @@ python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --loss LDAM --norm
 python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --loss LA
 ```
 ### Vector scaling loss [[paper]](https://arxiv.org/abs/2103.01550)
+```
 ppython3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --loss VS
 ```
 ### Influence-Balanced loss [[paper]](https://arxiv.org/abs/2110.02444)
