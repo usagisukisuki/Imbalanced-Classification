@@ -1,7 +1,10 @@
 # Imbalanced-Classification
 
 ## Learning on long-tailed CIFAR10 or CIFAR100 [[paper]](https://arxiv.org/abs/1901.05555)
-<img src="figs/fig.png"> 
+<div align="center">
+    <img src="figs/fig.png"> 
+</div>
+  
 ### Imbalanced ratio=10
 ```
 python3 train.py --dataset CIFAR10 (or CIFAR100) --gpu 0 --ratio 0.1
