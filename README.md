@@ -18,6 +18,8 @@ python3 train.py --dataset CIFAR10 (or CIFAR100) --gpu 0 --ratio 0.005
 python3 train.py --dataset CIFAR10 (or CIFAR100) --gpu 0 --ratio 0.002
 ```
 ## Learning with effective loss function
+If you want to utilize various loss functions, you can directly run the following code to train the model.
+
 ### Focal loss [[paper]](https://arxiv.org/abs/1708.02002)
 ```
 python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --loss Focal
@@ -59,23 +61,28 @@ python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --loss IBFL
 ```
 python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --loss ELM --norm
 ```
-### False cross-entropy loss [[paper]]
+### False cross-entropy loss [soon]
 ```
 python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --loss FCE
 python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --loss LAFCE
 ```
 
 ## Learning with class balancing weight [[paper]](https://arxiv.org/abs/1901.05555)
+If you want to apply class balancing weight, you can directly run the following code to train the model.
+
 ```
 python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --weight_rule CBReweight
 python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --weight_rule IBReweight
 ```
 
-## Learning with class balancing weighting scheduler [[paper]](https://arxiv.org/abs/1906.07413)
+If you want to apply the weighting scheduler (which was proposed in LDAM loss), you can directly run the following code to train the model.
+
+## Learning with weighting scheduler [[paper]](https://arxiv.org/abs/1906.07413)
 ```
 python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --weight_rule CBReweight --weight_scheduler DRW
 ```
 
+If you want to improve the performance of your model, you can apply the hard augmentations to the model.
 ## Learning with hard augmentation
 ### Mixup [[paper]](https://arxiv.org/abs/1710.09412)
 ```
