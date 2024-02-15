@@ -40,11 +40,11 @@ ppython3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --loss GR
 ```
 python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --loss BS
 ```
-### LADE loss (CVPR2021) [[paper]] (https://arxiv.org/abs/2012.00321)
+### LADE loss (CVPR2021) [[paper]](https://arxiv.org/abs/2012.00321)
 ```
 python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --loss LADE
 ```
-### LDAM loss (NeurIPS2019) [[paper]] (https://arxiv.org/abs/1906.07413)
+### LDAM loss (NeurIPS2019) [[paper]](https://arxiv.org/abs/1906.07413)
 ```
 python3 train.py --dataset CIFAR10 --gpu 0 --ratio 0.1 --loss LDAM --norm
 ```
